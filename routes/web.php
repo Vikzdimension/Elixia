@@ -12,8 +12,8 @@
 */
 
 $router->get('/', function () use ($router) {
-    // return $router->app->version();
-    return view('welcome');
+    return $router->app->version();
+    // return view('welcome');
 });
 
 $router->get('/key', function () use ($router) {
